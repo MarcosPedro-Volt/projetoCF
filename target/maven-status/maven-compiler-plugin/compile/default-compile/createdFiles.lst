@@ -5,9 +5,17 @@ com/mycompany/projetocf/TelaGerenciarVendas.class
 com/mycompany/projetocf/TelaGerenciarMateriais.class
 com/mycompany/projetocf/TelaVenda.class
 com/mycompany/projetocf/ItemMaterial.class
+com/mycompany/projetocf/CadastroCores.class
+com/mycompany/projetocf/TelaCampoDataCompras.class
+com/mycompany/projetocf/ItemCores.class
 com/mycompany/projetocf/Conexao.class
 com/mycompany/projetocf/MaterialDAO.class
 com/mycompany/projetocf/ProjetoCF.class
 com/mycompany/projetocf/TelaGraficoMateriais.class
 com/mycompany/projetocf/TesteConexao.class
+com/mycompany/projetocf/TelaCadastroCor.class
+com/mycompany/projetocf/TelaRegistrarCompra.class
+com/mycompany/projetocf/CompraDAO.class
+com/mycompany/projetocf/TelaGerenciaCompras.class
 com/mycompany/projetocf/TelaMaterial.class
+com/mycompany/projetocf/TelaGraficoCompras.class

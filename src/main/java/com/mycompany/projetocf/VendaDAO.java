@@ -197,8 +197,7 @@ public class VendaDAO {
                 lista.add(new Object[]{
                     rs.getString("nome"),
                     rs.getDouble("quantidade"),
-                    rs.getDouble("total_custo"),
-                    rs.getDouble("lucro")
+                    
                 });
             }
 

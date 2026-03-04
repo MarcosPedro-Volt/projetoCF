@@ -40,10 +40,15 @@ public class TelaPrincipal extends JFrame {
     
         JMenu menuCadastro = new JMenu("Cadastro");
         JMenuItem itemMaterial = new JMenuItem("Material");
+        JMenuItem itemCores = new JMenuItem("Cores");
 
         itemMaterial.addActionListener(e -> new TelaMaterial());
 
         menuCadastro.add(itemMaterial);
+        
+        itemCores.addActionListener(e -> new TelaCadastroCor());
+
+        menuCadastro.add(itemCores);
 
   
         JMenu menuVendas = new JMenu("Vendas");
@@ -57,6 +62,16 @@ public class TelaPrincipal extends JFrame {
         menuVendas.add(itemNovaVenda);
         menuVendas.add(itemGerenciarVendas);
 
+        
+        JMenu menuCompras = new JMenu("Compras");
+        JMenuItem itemNovaCompra = new JMenuItem("Registrar Compras");
+        JMenuItem itemGerenciarCompras = new JMenuItem("Gerenciar Compras");
+        
+        itemNovaCompra.addActionListener(e -> new TelaRegistrarCompra());
+        itemGerenciarCompras.addActionListener(e -> new TelaGerenciaCompras());
+        
+        menuCompras.add(itemNovaCompra);
+        menuCompras.add(itemGerenciarCompras);
        
         JMenu menuRelatorio = new JMenu("Relatórios");
         JMenuItem itemLucroMensal = new JMenuItem("Lucro Mensal");
@@ -72,12 +87,16 @@ public class TelaPrincipal extends JFrame {
         itemMateriais.addActionListener(e -> new TelaGerenciarMateriais());
 
         menuGerenciar.add(itemMateriais);
+        
+        
+
 
         
         menuBar.add(menuCadastro);
         menuBar.add(menuVendas);
         menuBar.add(menuRelatorio);
         menuBar.add(menuGerenciar);
+        menuBar.add(menuCompras);
 
         setJMenuBar(menuBar);
     }
